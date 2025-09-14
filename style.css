@@ -412,11 +412,12 @@ footer a:hover {
   }
   
   button {
-    width: 100%;
+    width: auto;
     margin: 80px;
     height: auto;
     padding: 15px 0;
     font-size: clamp(1.2rem, 4vw, 3rem);
+    align-self: center;
   }
   
   button.border {
