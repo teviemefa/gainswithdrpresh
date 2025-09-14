@@ -426,15 +426,8 @@ footer a:hover {
   }
 
   section.icons {
-   display: grid;
-   grid-template-columns: repeat(1fr) ;
-   justify-items: center;
-   font-family: 'Prata', serif;
-  font-size: clamp(1rem, 1.5vw, 2rem);
-  text-align: center;
-  color: #184A16;
-  padding: 5% 10%;
-  gap: 40px;
+  grid-template-columns: 1fr ;
+  grid-template-rows: repeat(3, 4fr 1fr);
   }
   
   section.online-main {
