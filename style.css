@@ -426,8 +426,10 @@ footer a:hover {
   }
 
   section.icons {
-  grid-template-columns: 1fr ;
-  grid-template-rows: repeat(3, 4fr 1fr);
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: repeat(3, 4fr 1fr);
+    background-color: #184A16;
   }
   
   section.online-main {
