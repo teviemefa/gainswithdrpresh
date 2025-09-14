@@ -1,6 +1,6 @@
 /* style.css */
 .homepage-header {
-  background-color: #E9EEE5;
+  background-color: #FFFFFF;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -8,21 +8,8 @@
   align-items: center;
 }
 
-.page-banners {
-  background-color: #E9EEE5;
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 2fr 1fr;
-  max-width: 100%;
-  padding: 5% 10%;
-  gap: 40px;
-  align-items: start;
-}
-
 .logo {
   height: 60px;
-  padding: 5px 5px 20px 5px;
   display: block;
 }
 
@@ -39,7 +26,7 @@ border-radius: 8px;
 }
 
 h1.home {
-  font-family: 'Paytone One', sans-serif;
+  font-family: 'Prata', serif;
   font-size: clamp(3rem, 6vw, 6rem);
   line-height: 1.5;
   text-align: center;
@@ -48,18 +35,17 @@ h1.home {
 }
 
 h1.pages {
-  grid-column: 1 / -1;
-  grid-row: 2;
-  font-family: 'Paytone One', sans-serif;
-  font-size: clamp(3rem, 6vw, 6rem);
+  grid-row: 1;
+  font-family: 'Prata', serif;
+  font-size: clamp(2rem, 4vw, 4rem);
   line-height: 1.5;
   text-align: left;
   color: #184A16;
-  display: block;
+  margin: 0;
 }
 
 .cursive {
-  font-family: "Playwrite US Modern", cursive;
+  font-family: "Sofia", cursive;
   font-style: normal;
   font-weight: normal;
   font-size: clamp(1rem, 2vw, 2rem);
@@ -70,17 +56,35 @@ h1.pages {
   color:#184A16;
 }
 
-
-nav.home {
-  background-color: #E9EEE5;
+.main-nav {
+  display: grid;
+  grid-template-columns: 280px 1fr 280px;
+  align-items: center;
+  background-color: #FFFFFF;
   color: #184A16; 
-  text-align: center;         
+  text-align: center;
   box-sizing: border-box;
-  font-size: clamp(1rem, 3vw, 6rem);
+  font-size: clamp(1rem, 1vw, 2rem);
   line-height: 1.5;
+  padding: 0.5em 1em;
+  gap: 1em;
+  margin: 40px;
 }
 
-nav.pages {
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.nav-center {
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+}
+header.pages {
   grid-column: 2;
   grid-row: 1;
   background-color: #E9EEE5;
@@ -93,15 +97,6 @@ nav.pages {
 }
 
 nav ul {
- list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-
-}
-
-nav ul.home {
  list-style: none;
   padding: 0;
   display: flex;
@@ -140,104 +135,137 @@ body {
   font-weight: normal;
   font-style: normal;
   line-height: 1.5;
-  background-color: #E9EEE5
 }
 
-main.pink-content {
+section.home-intro {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) ;
+  gap: 40px;
+  padding: 80px 120px;
+  margin: 40px;
+  background-color: #E9EEE5;
+  border-radius: 10px;
+}
+
+.intro {
   padding: 10%;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
   line-height: 1.5;
-  background-color: #EBCEEA;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 40px;
+  gap: 80px;
 }
 
-.homepage-pic {
+.intro-pic {
+  grid-column: 1;
   width: 100%;
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-.homepage-copy {
-  align-self: flex-start;
-  text-align: left;
+  max-width: 80%;
+  height: 480px;
+  width: 360px;
+  border: 5px solid #b1cc9d;
+  align-self: center;
 }
 
 .hi {
-  font-family: 'Paytone One', sans-serif;
+  grid-column: 2;
+  font-family: 'Prata', serif;
   font-size: clamp(2rem, 4vw, 4rem);
   line-height: 1.5;
   text-align: left;
   color: #184A16;
 }
 
-section.mid-green-content {
+.intro-copy {
+  grid-column: 2;
+  text-align: left;
+}
+
+
+section.mid-green-boxes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) ;
   gap: 40px;
-  padding: 10%;
-  background-color: #b1cc9d;}
+  padding: 40px 120px;
+  margin: 40px;
+  background-color: #b1cc9d;
+  border-radius: 10px;
+}
+
 
 .light-green-box {
+  display: grid;
   border: 5px solid #E9EEE5;
   background-color: #FFFFFF;
-  padding: 4%;
+  padding: 20px 40px;
 }
 
 .dark-green-box {
+  display: grid;
   border: 5px solid #184A16;
   background-color: #FFFFFF;
-  padding: 4%;
+  padding: 20px 40px;
 }
 
-.dark-pink-box {
-  border: 5px solid #E086A3;
+.light-pink-box {
+  display: grid;
+  border: 5px solid #EBCEEA;
   background-color: #FFFFFF;
-  padding: 4%;
+  padding: 20px 40px;
 }
 
-.orange-box {
-  border: 5px solid #D1775B;
-  background-color: #FFFFFF;
-  padding: 4%;
-}
 
-.box-link {
-  font-family: 'Paytone One', sans-serif;
+.box-title {
+  align-self: start;
+  justify-self: start;
+  font-family: 'Prata', serif;
   font-size: clamp(1rem, 2vw, 2rem);
   line-height: 1.5;
   text-align: left;
   color: #184A16;
 }
 
-.big-box-link {
-  font-family: 'Paytone One', sans-serif;
-  font-size: clamp(1rem, 3vw, 3rem);
+.box-link {
+  align-self: end;
+  justify-self: end;
+  font-family: 'Prata', serif;
+  font-size: 16px;
+  font-weight: bold;
   line-height: 1.5;
-  text-align: center;
+  text-align: right;
   color: #184A16;
 }
 
-section.light-green-content {
-  padding: 5% 10%;
+.big-box-link {
+  font-family: 'Prata', serif;
+  font-size: clamp(1rem, 2vw, 3rem);
+  text-decoration: none;  
+  line-height: 1.5;
+  text-align: center;
+  color: #184A16;
+  align-self: center;
+  justify-self: center;
+}
+
+section.online-main {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 40px;
+  padding: 80px 120px;
+  margin: 40px;
+  background-color: #E9EEE5;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
   line-height: 1.5;
-  background-color: #E9EEE5;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  border-radius: 10px;
 }
 
 main.pages-text-button {
 display: grid;
 grid-template-columns: 2fr 1fr;
-gap: 80px;
-padding: 5% 10%;
+gap: 120px;
 align-items: center;
 }
 
@@ -249,13 +277,14 @@ button {
   padding: 10px 20px;
   width: 360px;
   height: 120px;
-  font-size: clamp(1rem, 4vw, 4rem);
+  font-size: clamp(1rem, 3vw, 4rem);
   background-color: #184A16;
   color: white;
   border: none;
   cursor: pointer;
-  font-family: 'Paytone One', sans-serif;
+  font-family: 'Prata', serif;
   text-transform: uppercase;
+  margin: 80px 120px;
 }
 
 button.border {
@@ -270,8 +299,9 @@ section.icons {
   grid-template-columns: repeat(3,1fr) ;
   grid-template-rows: 4fr 1fr;
   justify-items: center;
-  font-family: 'Paytone One', sans-serif;
-  font-size: clamp(1rem, 3vw, 2rem);
+  font-family: 'Prata', serif;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  text-align: center;
   color: #184A16;
   padding: 5% 10%;
   gap: 40px;
