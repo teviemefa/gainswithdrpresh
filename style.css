@@ -365,54 +365,98 @@ footer a:hover {
 
 }
 @media (max-width: 768px) {
-  .page-banners {
+  .homepage-header {
+    padding: 1em;
+  }
+  
+  .main-nav {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    gap: 0.5em;
+    padding: 1em;
+    margin: 20px;
+  }
+  
+  .nav-left, .nav-center, .nav-right {
+    justify-content: center;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  section.home-intro {
+    padding: 40px 20px;
+    margin: 20px;
+  }
+  
+  .intro {
+    grid-template-columns: 1fr;
     gap: 20px;
+    padding: 5%;
   }
-
-  nav.pages {
-    grid-column: 1;
-    grid-row: 2;
-    text-align: center;
-    justify-self: center;
+  
+  .intro-pic {
+    height: auto;
+    max-width: 100%;
+    border-width: 3px;
   }
-
-  h1.pages {
-    text-align: center;
-    grid-column: 1;
-    grid-row: 3;
+  
+  section.mid-green-boxes {
+    padding: 20px;
+    margin: 20px;
+    grid-template-columns: 1fr;
   }
-
-  .logo-circle {
-    width: 120px;
-    justify-self: center;
+  
+  section.online-main {
+    padding: 40px 20px;
+    margin: 20px;
   }
+  
   main.pages-text-button {
     grid-template-columns: 1fr;
-    gap: 40px;
-    text-align: center;
+    gap: 20px;
+    margin: 0 20px;
   }
-
-  button.border {
+  
+  button {
     width: 100%;
-    max-width: 360px;
+    margin: 0 auto 40px auto;
+    height: auto;
+    padding: 15px 0;
+    font-size: clamp(1.2rem, 4vw, 3rem);
+  }
+  
+  button.border {
+    max-width: 100%;
     margin: 0 auto;
   }
+  
   section.icons {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, auto);
-    text-align: center;
-  }
-
-  .one-to-one-icon, .progress-icon, .location-icon,
-  p.one-to-one, p.progress, p.location {
-    grid-column: 1;
+    padding: 10% 5%;
+    gap: 20px;
   }
 }
+
 @media (max-width: 480px) {
   .footer-ul {
     flex-direction: column;
     gap: 5px;
+    padding: 0 10px;
+  }
+  
+  section.home-intro,
+  section.mid-green-boxes,
+  section.online-main {
+    padding: 20px 10px;
+    margin: 10px;
+  }
+  
+  h1.home {
+    font-size: clamp(2rem, 5vw, 4rem);
+  }
+  
+  h1.pages {
+    font-size: clamp(1.5rem, 5vw, 3rem);
   }
 }
