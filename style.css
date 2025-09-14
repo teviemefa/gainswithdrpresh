@@ -305,11 +305,28 @@ section.icons {
   padding: 5% 10%;
 }
 
+section.icons img {
+  max-height: 240px;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
 .icon-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+}
+
+.icon-block img {
+  margin: 0;
+  padding: 0;
+}
+
+.icon-block p {
+  margin: 0;
+  padding: 0;
 }
 
 footer {
