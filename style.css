@@ -412,7 +412,8 @@ footer a:hover {
   }
   
   button {
-    max-width: 200px;
+    max-width: 100%;
+    margin: 0 auto 40px auto;
     height: auto;
     padding: 15px 0;
     font-size: clamp(1.2rem, 4vw, 3rem);
@@ -420,7 +421,9 @@ footer a:hover {
   
   button.border {
     max-width: 100%;
+    margin: 0 auto;
   }
+  
   
 
 }
