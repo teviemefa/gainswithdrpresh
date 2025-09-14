@@ -401,15 +401,13 @@ footer a:hover {
 }
   
   section.online-main {
-    padding: 40px 20px;
-    margin: 20px;
+    padding: 80px;
+    margin: 80px;
   }
   
   main.pages-text-button {
     display: flex;
     flex-direction: column;
-    padding: 80px;
-    margin: 80px;
     gap: 20px; 
   }
   
