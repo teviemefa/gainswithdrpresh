@@ -296,47 +296,22 @@ button.border {
 
 section.icons {
   display: grid;
-  grid-template-columns: repeat(3,1fr) ;
-  grid-template-rows: 4fr 1fr;
-  justify-items: center;
+  grid-template-columns: repeat(3,1fr);
+  gap: 40px;
+  text-align: center;
   font-family: 'Prata', serif;
   font-size: clamp(1rem, 1.5vw, 2rem);
-  text-align: center;
   color: #184A16;
   padding: 5% 10%;
-  gap: 40px;
 }
 
-.one-to-one-icon {
-grid-column: 1;
-grid-row: 1;
-
+.icon-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-.progress-icon {
-grid-column: 2;
-grid-row: 1;
-}
-
-.location-icon {
-grid-column: 3;
-grid-row: 1;
-}
-
-p.one-to-one {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-p.progress {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-p.location {
-  grid-column: 3;
-  grid-row: 2;
-}
 footer {
   background-color: #184A16;          
   color: #eee;                     
@@ -390,7 +365,7 @@ footer a:hover {
     flex-direction: column;
     padding: 80px;
     margin: 80px;
-    gap: 20px; /* space between image and text */
+    gap: 20px; 
     background-color: #E9EEE5;
     border-radius: 10px;
   }
