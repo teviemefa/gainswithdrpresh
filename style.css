@@ -421,6 +421,13 @@ footer a:hover {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+
+  section.icons img {
+  max-height: 160px;
+  width: auto;
+  height: auto;
+  display: block;
+}
   
   section.online-main {
     padding: 40px 20px;
